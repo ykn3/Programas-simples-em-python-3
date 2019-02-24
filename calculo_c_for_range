@@ -1,8 +1,0 @@
-soma = 0
-cont = 0
-for busca in range(0, 500):
-    if busca %2 == 1 and busca % 3 == 0:
-        soma = soma + busca
-        cont = cont +1
-print("O valor da soma de todos os numeros impares, divisiveis por 3, entre 0 e 500 é {}.".format(soma))
-print("Encontrei {} numeros compativeis com os parametros e somei cada um para chegar ao resultado acima.".format(cont))
