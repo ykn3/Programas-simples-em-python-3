@@ -1,0 +1,146 @@
+from random import randint
+from time import sleep
+
+itens = ('pedra', 'papel', 'tesoura')
+pc = randint(0, 2)
+print("""Suas opções :
+
+ [1] Pedra
+ [2] Papel
+ [3] Tesoura
+
+ """)
+tentativa = int(input('Digite sua jogada : '))
+print('')
+if pc == 0:  # Pedra
+    if tentativa == 1:
+        print('JO')
+        sleep(1)
+        print('KEN')
+        sleep(1)
+        print('PO!')
+        sleep(1)
+        print('')
+        print('Você empatou com o PC')
+        print('')
+        print("O PC escolheu {}.".format(itens[pc]))
+        print("Você escolheu {}.".format(itens[tentativa - 1]))
+        print('')
+    elif tentativa == 2:
+        print('JO')
+        sleep(1)
+        print('KEN')
+        sleep(1)
+        print('PO!')
+        sleep(1)
+        print('')
+        print('Você perdeu para o PC')
+        print('')
+        print("O PC escolheu {}".format(itens[pc]))
+        print("Você escolheu {}.".format(itens[tentativa - 1]))
+        print('')
+    elif tentativa == 3:
+        print('JO')
+        sleep(1)
+        print('KEN')
+        sleep(1)
+        print('PO!')
+        sleep(1)
+        print('')
+        print('Parabéns, você venceu.')
+        print('')
+        print("O PC escolheu {}".format(itens[pc]))
+        print("Você escolheu {}.".format(itens[tentativa - 1]))
+        print('')
+    else:
+        print('Jogada invalida.')
+
+
+elif pc == 1:  # Papel
+    if tentativa == 1:
+        print('JO')
+        sleep(1)
+        print('KEN')
+        sleep(1)
+        print('PO!')
+        sleep(1)
+        print('')
+        print('Você perdeu para o PC.')
+        print('')
+        print("O PC escolheu {}".format(itens[pc]))
+        print("Você escolheu {}.".format(itens[tentativa - 1]))
+        print('')
+    elif tentativa == 2:
+        print('JO')
+        sleep(1)
+        print('KEN')
+        sleep(1)
+        print('PO!')
+        sleep(1)
+        print('')
+        print('Você empatou com o Pc')
+        print('')
+        print("O PC escolheu {}".format(itens[pc]))
+        print("Você escolheu {}.".format(itens[tentativa - 1]))
+        print('')
+    elif tentativa == 3:
+        print('JO')
+        sleep(1)
+        print('KEN')
+        sleep(1)
+        print('PO!')
+        sleep(1)
+        print('')
+        print('Parabéns, você venceu.')
+        print('')
+        print("O PC escolheu {}".format(itens[pc]))
+        print("Você escolheu {}.".format(itens[tentativa - 1]))
+        print('')
+    else:
+        print('Jogada invalida')
+
+
+elif pc == 2:  # Tesoura
+    if tentativa == 1:
+        print('JO')
+        sleep(1)
+        print('KEN')
+        sleep(1)
+        print('PO!')
+        sleep(1)
+        print('')
+        print('Parabéns, você venceu.')
+        print('')
+        print("O PC escolheu {}".format(itens[pc]))
+        print("Você escolheu {}.".format(itens[tentativa - 1]))
+        print('')
+    elif tentativa == 2:
+        print('JO')
+        sleep(1)
+        print('KEN')
+        sleep(1)
+        print('PO!')
+        sleep(1)
+        print('')
+        print('Você perdeu para o PC')
+        print('')
+        print("O PC escolheu {}".format(itens[pc]))
+        print("Você escolheu {}.".format(itens[tentativa - 1]))
+        print('')
+    elif tentativa == 3:
+        print('JO')
+        sleep(1)
+        print('KEN')
+        sleep(1)
+        print('PO!')
+        sleep(1)
+        print('')
+        print('Você empatou com o PC')
+        print('')
+        print("O PC escolheu {}".format(itens[pc]))
+        print("Você escolheu {}.".format(itens[tentativa - 1]))
+        print('')
+    elif tentativa == 0:
+        print('Tente novamente')
+    else:
+        print('Jogada invalida')
