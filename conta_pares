@@ -1,0 +1,9 @@
+print('Este programa Soma os numeros pares dentro do parametro desejado.')
+qtd = int(input('Digite o numero que classifica a interação maxima do laço :'))
+
+soma = 0
+for numero in range(0, qtd):
+    if numero % 2 == 0:
+        soma = soma + numero
+print('A soma dos numeros pares entre 0 e {} é {}.'.format(qtd, soma))
+print('')
