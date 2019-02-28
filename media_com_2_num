@@ -1,0 +1,5 @@
+n1 = float(input('Digite o quanto tirou na primeira prova :'))
+n2 = float(input('Digite o quanto tirou na segunda prova  :'))
+m = (n1+n2)/2
+print('sua media foi {:.2}'.format(m))
+print('Parabéns. Ficou acima da media.' if m >=7 else 'Puts, ficou abaixo da media. Estude mais!')
