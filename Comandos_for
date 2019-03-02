@@ -1,0 +1,21 @@
+for teste in range(0, 3):  # repete Pudim 3x e depois escreve Supremo.
+    print('Pudim')
+print('Supremo')
+print('')
+
+for teste in range(0, 3):  # Conta do 0 ao 2
+    print(teste)
+print('')
+
+for teste in range(0, 10, 2):  # conta de 0 a 10 pulando um numero por vez. 0, 2,... 8.
+    print(teste)
+print('')
+
+for teste in range(5, 0, -1):  # contagem regressiva
+    print(teste)
+print('')
+
+nx = int(input('Digite o numero de repetições deste laço :'))
+for testex in range(0, nx+1):
+    print(testex)
+print('Fim')
